@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta name="viewport" content="width=device-width,initial-scale=1.0">
+   <meta charset="UTF-8">
+   <title>Personal Portfolio | Responsive Website Design</title>
+   <link rel="stylesheet" href="Portfolio.css">
+</head>
+   <body>
+     <header>
+       <a href="#" class="logo">Portfolio</a>
+       <div class="toggle active" onclick="toggleMenu();"></div>
+       <ul class="menu">
+         <li><a href ="#home">Home</a></li>
+         <li><a href ="#about">About</a></li>
+         <li><a href ="#projects">Projects</a></li>
+         <li><a href ="#contact">Contact</a></li>   
+        </ul>
+      </header>
+      <section class="banner" id="home">
+      <div class="textBx">
+        <h2>Hello, I am<br><span> Hari Priya Malladi</h2>
+        <h2> I am  a Software Developer</h2>
+        <a href="#about" class="btn">ABOUT ME</a>
+      </div>
+      </section>
+      <section class ="about" id="about">
+        <div class="heading">
+          <h2>ABOUT ME</h2>
+        </div>
+        
+      <div class="content">
+         <div class="contentBx w50">
+           <p class="para">Hi I'm Hari Priya Malladi.I have wide range of passion for UI Development/software technologies.
+            <br/>I prefer to keep learning, engage myself in different challenges
+            and maintain a consistent growth in my career.I am a fast learner,
+            able to pick up new projectsand skills and juggle different roles
+            with relative ease. I have diverse range of skill set ranging
+            from HTML to css to JavaScript to python.</p>
+            <h2>Designer</h2>
+            <p class="para2">I value simple content structure, clean design patterns, and thoughtful interactions</p>
+            <h2>Developer</h2>
+            <p class="para2">I like to code things from scratch, and enjoy bringing ideas to life in the browser.</p>
+            <h2>Explorer</h2>
+            <p class="para2">I like to deep dive into different technologies and would like to expand my knowledge in different areas</p>
+         
+          </div>
+         
+          
+         
+        
+          <div class="heading w50">
+            <h2>SKILL SET</h2>      
+         <div >
+          <p>HTML</p>
+           <div class="container">
+  <div class="skills html">90%</div>
+           </div>
+</div>
+<p>CSS</p>
+<div class="container">
+  <div class="skills css">80%</div>
+</div>
+
+<p>JavaScript</p>
+<div class="container">
+  <div class="skills js">80%</div>
+</div>
+
+<p>Python</p>
+<div class="container">
+  <div class="skills Python">50%</div>
+</div>
+
+<p>Kotlin</p>
+<div class="container">
+  <div class="skills Python">50%</div>
+</div>
+</section>
+
+
+<section class="projects" id="projects">
+  <div class="heading white">
+    <h2>PROJECTS</h2>
+    </div>
+
+<div class="content">
+  <div class="projectsBx">
+    <h2>Project 1</h2>
+    <p>Lending Tree is an interface which facilitates a customer to apply for a loan from online and to track the status from time-to time.</p>
+  </div>
+  <div class="content">
+    <div class="projectsBx">
+      <h2>Project 2</h2>
+      <p>In Rating prediction based on Social sentiment from Textual reviews, we propose a sentiment based rating prediction method to improve prediction accuracy in recommender system</p>
+     </div>
+     <div class="content">
+      <div class="projectsBx">
+        <h2>Project 3</h2>
+         <p>In Hangman game, the word to guess is represented by a row of dashes. If the player guess a letter which exists in the word, the script writes it in all its correct positions.</p>       </div>
+</div>
+</div>
+</div>
+</section>
+<section class ="contact" id="contact">
+  <div class="formBx">
+    <div class="heading white">
+      <h2>CONTACT INFO</h2>
+      </div>
+    <form>
+      <input type="text" name="" placeholder="Full Name"><br>
+      <input type="email" name="" placeholder="Email"><br>
+      <textarea placeholder="Your Message"></textarea><br>
+      <input type="submit" value="Send MESSAGE">
+      </form>
+  </div>
+</section>                    
+
+  </div>
+</div>
+</div>
+</section>
+<script type="text/javascript">
+ window.addEventListener('scroll', function(){
+   var header = document.querySelector('header');
+   header.classList.toggle('sticky', window.scrollY > 0);
+ });
+ function toggleMenu(){
+   var menuToggle = document.querySelector('.toggle');
+   var menu = document.querySelector('.menu');
+
+   menuToggle.classList.toggle('active');
+   menu.classList.toggle('active');
+
+ }
+   </script>
+    
+   </header>
+   </body>
+   </html>
+
